@@ -37,8 +37,13 @@ Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
 echo "📝 Step 4: 커밋"
 git commit -m "$COMMIT_MSG"
 
-# 6. 푸시 (Cloudflare Pages 자동 배포 트리거)
+# 6. 푸시
 echo "📝 Step 5: GitHub 푸시"
 git push origin main
 
-echo "✅ 배포 완료! Cloudflare Pages에서 자동 빌드가 시작됩니다."
+# 7. Cloudflare Pages 배포
+echo "📝 Step 6: Cloudflare Pages 배포"
+wrangler pages deploy . --project-name jocoding-week1-self --branch main --commit-dirty=true
+
+echo "✅ 배포 완료!"
+echo "🌐 https://jocoding-week1-self.pages.dev"

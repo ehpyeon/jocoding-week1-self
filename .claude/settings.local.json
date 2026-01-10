@@ -7,7 +7,12 @@
       "Bash(chmod:*)",
       "Bash(bash scripts/test.sh:*)",
       "Bash(bash scripts/deploy.sh:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(wrangler whoami:*)",
+      "Bash(wrangler login:*)",
+      "Bash(wrangler pages project create:*)",
+      "Bash(wrangler pages deploy:*)"
     ]
   },
   "hooks": {
