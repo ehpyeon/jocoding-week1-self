@@ -116,6 +116,34 @@
             </div>
         </div>
 
+        <!-- AI Pet Detector Card -->
+        <div class="rounded-xl border border-border bg-card p-6 shadow-lg mt-6">
+            <div class="flex items-center gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" x2="12" y1="19" y2="22"></line>
+                </svg>
+                <h2 class="text-lg font-semibold">AI 고양이/개 인식</h2>
+            </div>
+            <p class="text-sm text-muted-foreground mb-4">웹캠으로 고양이인지 개인지 AI가 판별합니다</p>
+
+            <button
+                id="startCamBtn"
+                onclick="initTeachable()"
+                class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-secondary text-secondary-foreground h-11 px-8 font-medium transition-all hover:bg-secondary/80 active:scale-[0.98] mb-4"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.934a.5.5 0 0 0-.777-.416L16 11"></path>
+                    <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                </svg>
+                웹캠 시작하기
+            </button>
+
+            <div id="webcam-container" class="flex justify-center mb-4 rounded-lg overflow-hidden"></div>
+            <div id="label-container" class="space-y-2"></div>
+        </div>
+
         <!-- Comments Card -->
         <div class="rounded-xl border border-border bg-card p-6 shadow-lg mt-6">
             <div class="flex items-center gap-2 mb-4">
@@ -221,5 +249,73 @@
     </script>
     <!-- Disqus Comment Count -->
     <script id="dsq-count-scr" src="//lotto-11.disqus.com/count.js" async></script>
+
+    <!-- Teachable Machine -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script>
+        const MODEL_URL = "./my_model/";
+        let tmModel, webcam, labelContainer, maxPredictions;
+
+        async function initTeachable() {
+            const btn = document.getElementById('startCamBtn');
+            btn.textContent = '로딩 중...';
+            btn.disabled = true;
+
+            try {
+                const modelURL = MODEL_URL + "model.json";
+                const metadataURL = MODEL_URL + "metadata.json";
+
+                tmModel = await tmImage.load(modelURL, metadataURL);
+                maxPredictions = tmModel.getTotalClasses();
+
+                const flip = true;
+                webcam = new tmImage.Webcam(280, 280, flip);
+                await webcam.setup();
+                await webcam.play();
+                window.requestAnimationFrame(loopTeachable);
+
+                document.getElementById("webcam-container").appendChild(webcam.canvas);
+                webcam.canvas.className = 'rounded-lg';
+
+                labelContainer = document.getElementById("label-container");
+                labelContainer.innerHTML = '';
+                for (let i = 0; i < maxPredictions; i++) {
+                    const div = document.createElement("div");
+                    div.className = 'p-3 rounded-lg bg-secondary/50';
+                    labelContainer.appendChild(div);
+                }
+
+                btn.textContent = '인식 중...';
+            } catch (error) {
+                btn.textContent = '모델 로드 실패';
+                console.error('Teachable Machine Error:', error);
+                labelContainer.innerHTML = '<p class="text-sm text-red-400">모델 파일을 찾을 수 없습니다. my_model 폴더에 model.json, metadata.json 파일이 필요합니다.</p>';
+            }
+        }
+
+        async function loopTeachable() {
+            webcam.update();
+            await predictTeachable();
+            window.requestAnimationFrame(loopTeachable);
+        }
+
+        async function predictTeachable() {
+            const prediction = await tmModel.predict(webcam.canvas);
+            for (let i = 0; i < maxPredictions; i++) {
+                const prob = (prediction[i].probability * 100).toFixed(1);
+                const barWidth = prediction[i].probability * 100;
+                labelContainer.childNodes[i].innerHTML = `
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="font-medium">${prediction[i].className}</span>
+                        <span class="text-sm text-muted-foreground">${prob}%</span>
+                    </div>
+                    <div class="h-2 bg-secondary rounded-full overflow-hidden">
+                        <div class="h-full bg-primary transition-all duration-300" style="width: ${barWidth}%"></div>
+                    </div>
+                `;
+            }
+        }
+    </script>
 </body>
 </html>
