@@ -27,7 +27,7 @@ if ! grep -q "<head>" index.html; then
     exit 1
 fi
 
-if ! grep -q "<body>" index.html; then
+if ! grep -q "<body" index.html; then
     echo "❌ body 태그가 없습니다"
     exit 1
 fi
