@@ -116,6 +116,30 @@
             </div>
         </div>
 
+        <!-- Comments Card -->
+        <div class="rounded-xl border border-border bg-card p-6 shadow-lg mt-6">
+            <div class="flex items-center gap-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <h2 class="text-lg font-semibold">댓글</h2>
+            </div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = 'https://jocoding-week1-self.pages.dev/';
+                    this.page.identifier = 'lotto-generator';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://lotto-11.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+
         <!-- Footer -->
         <div class="text-center mt-8 text-sm text-muted-foreground">
             <p>Made with Jocoding Week 1</p>
@@ -195,5 +219,7 @@
             }
         }
     </script>
+    <!-- Disqus Comment Count -->
+    <script id="dsq-count-scr" src="//lotto-11.disqus.com/count.js" async></script>
 </body>
 </html>
