@@ -3,25 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 생성기 - 무료 AI 행운 번호 추천 서비스</title>
-    <meta name="description" content="무료 로또 번호 생성기와 AI 반려동물 인식 서비스를 제공합니다. 랜덤 알고리즘으로 행운의 번호를 추천받고, AI로 고양이와 개를 구분해보세요.">
-    <meta name="keywords" content="로또, 번호 생성기, 로또 번호, 행운 번호, AI, 반려동물 인식, 고양이, 개">
-    <meta name="author" content="Lotto Generator">
+    <title>로또 번호 생성기 - 무료 행운 번호 추천 | LuckyTools</title>
+    <meta name="description" content="무료 로또 번호 생성기. 로또 6/45 당첨 확률, 번호 선택 전략, 구매 방법, 당첨금 정보까지 로또에 관한 모든 것을 알아보세요.">
+    <meta name="keywords" content="로또, 번호 생성기, 로또 번호, 행운 번호, 로또 6/45, 당첨 확률, 로또 구매, 로또 당첨금">
+    <meta name="author" content="LuckyTools">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://jocoding-week1-self.pages.dev/">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jocoding-week1-self.pages.dev/">
-    <meta property="og:title" content="로또 번호 생성기 - 무료 AI 행운 번호 추천">
-    <meta property="og:description" content="무료 로또 번호 생성기와 AI 반려동물 인식 서비스. 랜덤 알고리즘으로 행운의 번호를 추천받으세요.">
-    <meta property="og:image" content="https://jocoding-week1-self.pages.dev/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://jocoding-week1-self.pages.dev/">
-    <meta property="twitter:title" content="로또 번호 생성기 - 무료 AI 행운 번호 추천">
-    <meta property="twitter:description" content="무료 로또 번호 생성기와 AI 반려동물 인식 서비스.">
+    <meta property="og:title" content="로또 번호 생성기 - 무료 행운 번호 추천 | LuckyTools">
+    <meta property="og:description" content="무료 로또 번호 생성기. 로또 6/45 당첨 확률, 번호 선택 전략, 구매 방법까지 모든 정보를 제공합니다.">
 
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6498788559901853" crossorigin="anonymous"></script>
@@ -44,11 +37,7 @@
                         accent: { DEFAULT: "hsl(240 3.7% 15.9%)", foreground: "hsl(0 0% 98%)" },
                         card: { DEFAULT: "hsl(240 10% 3.9%)", foreground: "hsl(0 0% 98%)" },
                     },
-                    borderRadius: {
-                        lg: "0.5rem",
-                        md: "calc(0.5rem - 2px)",
-                        sm: "calc(0.5rem - 4px)",
-                    },
+                    borderRadius: { lg: "0.5rem", md: "calc(0.5rem - 2px)", sm: "calc(0.5rem - 4px)" },
                 }
             }
         }
@@ -59,9 +48,7 @@
             60% { transform: scale(1.1) rotate(10deg); }
             100% { transform: scale(1) rotate(0deg); opacity: 1; }
         }
-        .ball-animate {
-            animation: ball-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
+        .ball-animate { animation: ball-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
         .gradient-1 { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
         .gradient-2 { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
         .gradient-3 { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); }
@@ -70,9 +57,9 @@
     </style>
 </head>
 <body class="min-h-screen bg-background text-foreground antialiased">
-    <!-- Navigation Header -->
+    <!-- Navigation -->
     <nav class="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 max-w-4xl">
+        <div class="container mx-auto px-4 py-3 max-w-5xl">
             <div class="flex items-center justify-between">
                 <a href="/" class="flex items-center gap-2 font-bold text-lg">
                     <svg width="28" height="28" viewBox="0 0 50 50">
@@ -82,18 +69,19 @@
                     </svg>
                     LuckyTools
                 </a>
-                <div class="flex items-center gap-4 text-sm">
-                    <a href="#lotto" class="text-muted-foreground hover:text-foreground transition-colors">로또</a>
-                    <a href="#ai-pet" class="text-muted-foreground hover:text-foreground transition-colors">AI 인식</a>
-                    <a href="#about" class="text-muted-foreground hover:text-foreground transition-colors">소개</a>
+                <div class="flex items-center gap-6 text-sm">
+                    <a href="/" class="text-foreground font-medium">홈</a>
+                    <a href="lotto-guide.html" class="text-muted-foreground hover:text-foreground transition-colors">로또 가이드</a>
+                    <a href="faq.html" class="text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
+                    <a href="about.html" class="text-muted-foreground hover:text-foreground transition-colors">소개</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <div class="container mx-auto px-4 py-8 max-w-2xl">
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
         <!-- Hero Section -->
-        <header class="text-center mb-8">
+        <header class="text-center mb-12">
             <div class="flex justify-center gap-2 mb-6">
                 <svg width="50" height="50" viewBox="0 0 50 50" class="drop-shadow-lg animate-bounce" style="animation-delay: 0s; animation-duration: 2s;">
                     <defs><linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#fbbf24"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient></defs>
@@ -116,187 +104,258 @@
                     <circle cx="25" cy="25" r="23" fill="url(#green)"/><ellipse cx="18" cy="18" rx="8" ry="6" fill="rgba(255,255,255,0.3)" transform="rotate(-30 18 18)"/><text x="25" y="31" text-anchor="middle" fill="white" font-weight="bold" font-size="16">42</text>
                 </svg>
             </div>
-            <h1 class="text-4xl font-bold tracking-tight mb-2">로또 번호 생성기</h1>
-            <p class="text-muted-foreground mb-4">무료로 행운의 번호를 뽑아보세요</p>
+            <h1 class="text-4xl font-bold tracking-tight mb-4">로또 번호 생성기</h1>
+            <p class="text-xl text-muted-foreground mb-2">무료로 행운의 번호를 뽑아보세요</p>
+            <p class="text-muted-foreground max-w-2xl mx-auto">대한민국 로또 6/45 게임에 최적화된 랜덤 번호 생성기입니다. 1부터 45까지의 숫자 중 6개를 무작위로 추출하여 여러분의 로또 번호 선택을 도와드립니다.</p>
         </header>
 
-        <!-- Lotto Generator Section -->
-        <section id="lotto" class="mb-8">
-            <article class="rounded-xl border border-border bg-card p-6 shadow-lg mb-6">
-                <h2 class="sr-only">로또 번호 생성</h2>
-                <div class="min-h-[100px] flex items-center justify-center gap-3 flex-wrap mb-6" id="numbersContainer">
-                    <p class="text-muted-foreground text-sm">버튼을 눌러 번호를 생성하세요</p>
-                </div>
-                <button
-                    onclick="generateNumbers()"
-                    class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-primary-foreground h-11 px-8 font-medium transition-all hover:opacity-90 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                    aria-label="로또 번호 생성하기"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
-                        <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
-                        <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
-                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                    </svg>
-                    번호 생성하기
-                </button>
-            </article>
+        <!-- Two Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Lotto Generator -->
+                <section id="lotto" class="rounded-xl border border-border bg-card p-6 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">번호 생성기</h2>
+                    <div class="min-h-[100px] flex items-center justify-center gap-3 flex-wrap mb-6" id="numbersContainer">
+                        <p class="text-muted-foreground text-sm">아래 버튼을 클릭하여 번호를 생성하세요</p>
+                    </div>
+                    <button onclick="generateNumbers()" class="w-full inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-primary-foreground h-12 px-8 font-medium transition-all hover:opacity-90 active:scale-[0.98]" aria-label="로또 번호 생성하기">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        번호 생성하기
+                    </button>
 
-            <!-- History Card -->
-            <article class="rounded-xl border border-border bg-card p-6 shadow-lg">
-                <div class="flex items-center gap-2 mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                    <h3 class="text-lg font-semibold">생성 기록</h3>
-                </div>
-                <div id="historyList" class="space-y-2 max-h-[200px] overflow-y-auto">
-                    <p class="text-sm text-muted-foreground py-4 text-center">아직 생성된 번호가 없습니다</p>
-                </div>
-            </article>
-        </section>
+                    <!-- History -->
+                    <div class="mt-6 pt-6 border-t border-border">
+                        <h3 class="text-sm font-semibold mb-3 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            최근 생성 기록
+                        </h3>
+                        <div id="historyList" class="space-y-2 max-h-[150px] overflow-y-auto">
+                            <p class="text-sm text-muted-foreground py-2 text-center">아직 생성된 번호가 없습니다</p>
+                        </div>
+                    </div>
+                </section>
 
-        <!-- How to Use Section -->
-        <section class="rounded-xl border border-border bg-card p-6 shadow-lg mb-6">
-            <h2 class="text-lg font-semibold mb-4">사용 방법</h2>
-            <div class="space-y-3 text-sm text-muted-foreground">
-                <div class="flex gap-3">
-                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold">1</span>
-                    <p>"번호 생성하기" 버튼을 클릭하세요.</p>
-                </div>
-                <div class="flex gap-3">
-                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold">2</span>
-                    <p>1부터 45까지의 숫자 중 6개의 랜덤 번호가 생성됩니다.</p>
-                </div>
-                <div class="flex gap-3">
-                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold">3</span>
-                    <p>생성 기록에서 최근 5개의 번호를 확인할 수 있습니다.</p>
-                </div>
+                <!-- How It Works -->
+                <section class="rounded-xl border border-border bg-card p-6 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">로또 번호 생성기 사용 방법</h2>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">1</span>
+                            <div>
+                                <h3 class="font-semibold mb-1">번호 생성 버튼 클릭</h3>
+                                <p class="text-sm text-muted-foreground">위의 "번호 생성하기" 버튼을 클릭하면 즉시 6개의 랜덤 번호가 생성됩니다. 자바스크립트의 Math.random() 함수를 사용하여 완전히 무작위로 번호를 추출합니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">2</span>
+                            <div>
+                                <h3 class="font-semibold mb-1">번호 확인 및 기록</h3>
+                                <p class="text-sm text-muted-foreground">생성된 번호는 화면에 애니메이션과 함께 표시됩니다. 번호는 색상으로 구분되어 있어 한눈에 파악하기 쉽습니다. 1~10은 노란색, 11~20은 파란색, 21~30은 빨간색, 31~40은 보라색, 41~45는 초록색입니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">3</span>
+                            <div>
+                                <h3 class="font-semibold mb-1">원하는 번호 선택</h3>
+                                <p class="text-sm text-muted-foreground">여러 번 생성하여 마음에 드는 번호 조합을 찾아보세요. 최근 5개의 생성 기록이 저장되어 비교할 수 있습니다. 단, 페이지를 새로고침하면 기록이 초기화됩니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Lotto Information -->
+                <section class="rounded-xl border border-border bg-card p-6 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">로또 6/45 기본 정보</h2>
+                    <div class="prose prose-invert max-w-none text-muted-foreground">
+                        <p class="mb-4">대한민국 로또 6/45는 동행복권에서 운영하는 대표적인 복권 게임입니다. 매주 토요일 오후 8시 45분에 MBC에서 생방송으로 추첨이 진행되며, 1등 당첨금은 평균 20억 원 이상입니다.</p>
+
+                        <h3 class="text-lg font-semibold text-foreground mt-6 mb-3">로또 당첨 확률</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm border-collapse">
+                                <thead>
+                                    <tr class="border-b border-border">
+                                        <th class="text-left py-2 px-3">등수</th>
+                                        <th class="text-left py-2 px-3">당첨 조건</th>
+                                        <th class="text-left py-2 px-3">확률</th>
+                                        <th class="text-left py-2 px-3">평균 당첨금</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-border/50">
+                                        <td class="py-2 px-3 font-medium text-foreground">1등</td>
+                                        <td class="py-2 px-3">6개 번호 일치</td>
+                                        <td class="py-2 px-3">1/8,145,060</td>
+                                        <td class="py-2 px-3">약 20억원</td>
+                                    </tr>
+                                    <tr class="border-b border-border/50">
+                                        <td class="py-2 px-3 font-medium text-foreground">2등</td>
+                                        <td class="py-2 px-3">5개 + 보너스</td>
+                                        <td class="py-2 px-3">1/1,357,510</td>
+                                        <td class="py-2 px-3">약 5천만원</td>
+                                    </tr>
+                                    <tr class="border-b border-border/50">
+                                        <td class="py-2 px-3 font-medium text-foreground">3등</td>
+                                        <td class="py-2 px-3">5개 번호 일치</td>
+                                        <td class="py-2 px-3">1/35,724</td>
+                                        <td class="py-2 px-3">약 150만원</td>
+                                    </tr>
+                                    <tr class="border-b border-border/50">
+                                        <td class="py-2 px-3 font-medium text-foreground">4등</td>
+                                        <td class="py-2 px-3">4개 번호 일치</td>
+                                        <td class="py-2 px-3">1/733</td>
+                                        <td class="py-2 px-3">5만원 (고정)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 font-medium text-foreground">5등</td>
+                                        <td class="py-2 px-3">3개 번호 일치</td>
+                                        <td class="py-2 px-3">1/45</td>
+                                        <td class="py-2 px-3">5천원 (고정)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3 class="text-lg font-semibold text-foreground mt-6 mb-3">로또 구매 방법</h3>
+                        <p class="mb-3">로또 복권은 전국의 복권 판매점에서 구매할 수 있으며, 동행복권 공식 웹사이트와 앱에서 온라인으로도 구매 가능합니다. 1게임당 1,000원이며, 최대 5게임까지 한 장에 기재할 수 있습니다.</p>
+                        <ul class="list-disc list-inside space-y-1 mb-4">
+                            <li>오프라인: 전국 로또 판매점 (편의점, 슈퍼마켓 등)</li>
+                            <li>온라인: 동행복권 홈페이지 (www.dhlottery.co.kr)</li>
+                            <li>모바일: 동행복권 앱 (iOS, Android)</li>
+                        </ul>
+
+                        <div class="p-4 rounded-lg bg-secondary/50 mt-4">
+                            <p class="text-sm"><strong class="text-foreground">참고:</strong> 본 서비스의 번호 생성기는 순수한 랜덤 알고리즘을 사용하며, 어떠한 당첨 확률 향상도 보장하지 않습니다. 로또는 운에 의존하는 게임이므로 무리한 구매는 자제해 주세요.</p>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-        </section>
 
-        <!-- AI Pet Detector Section -->
-        <section id="ai-pet" class="rounded-xl border border-border bg-card p-6 shadow-lg mb-6">
-            <div class="flex items-center gap-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground" aria-hidden="true">
-                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
-                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                    <line x1="12" x2="12" y1="19" y2="22"></line>
-                </svg>
-                <h2 class="text-lg font-semibold">AI 고양이/개 인식</h2>
-            </div>
-            <p class="text-sm text-muted-foreground mb-4">Google Teachable Machine으로 학습된 AI가 웹캠을 통해 고양이인지 개인지 판별합니다. 버튼을 눌러 사진을 촬영하면 AI가 분석 결과를 알려드립니다.</p>
+            <!-- Sidebar -->
+            <aside class="space-y-6">
+                <!-- Quick Links -->
+                <div class="rounded-xl border border-border bg-card p-6 shadow-lg">
+                    <h3 class="font-bold mb-4">유용한 정보</h3>
+                    <nav class="space-y-2">
+                        <a href="lotto-guide.html" class="flex items-center gap-3 p-3 rounded-lg hover:bg-secondary/50 transition-colors">
+                            <span class="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-white font-bold">L</span>
+                            <div>
+                                <div class="font-medium text-sm">로또 완벽 가이드</div>
+                                <div class="text-xs text-muted-foreground">당첨 확률과 전략</div>
+                            </div>
+                        </a>
+                        <a href="faq.html" class="flex items-center gap-3 p-3 rounded-lg hover:bg-secondary/50 transition-colors">
+                            <span class="w-10 h-10 rounded-lg bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center text-white font-bold">?</span>
+                            <div>
+                                <div class="font-medium text-sm">자주 묻는 질문</div>
+                                <div class="text-xs text-muted-foreground">FAQ</div>
+                            </div>
+                        </a>
+                        <a href="about.html" class="flex items-center gap-3 p-3 rounded-lg hover:bg-secondary/50 transition-colors">
+                            <span class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-white font-bold">i</span>
+                            <div>
+                                <div class="font-medium text-sm">서비스 소개</div>
+                                <div class="text-xs text-muted-foreground">About</div>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
 
-            <div class="flex gap-2 mb-4">
-                <button
-                    id="startCamBtn"
-                    onclick="initTeachable()"
-                    class="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-secondary text-secondary-foreground h-11 px-8 font-medium transition-all hover:bg-secondary/80 active:scale-[0.98]"
-                    aria-label="웹캠 시작하기"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.934a.5.5 0 0 0-.777-.416L16 11"></path>
-                        <rect x="2" y="6" width="14" height="12" rx="2"></rect>
-                    </svg>
-                    웹캠 시작하기
-                </button>
-                <button
-                    id="captureBtn"
-                    onclick="captureAndPredict()"
-                    class="flex-1 inline-flex items-center justify-center gap-2 rounded-lg bg-primary text-primary-foreground h-11 px-8 font-medium transition-all hover:opacity-90 active:scale-[0.98] hidden"
-                    aria-label="촬영하기"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                    촬영하기
-                </button>
-            </div>
+                <!-- Tips -->
+                <div class="rounded-xl border border-border bg-card p-6 shadow-lg">
+                    <h3 class="font-bold mb-4">로또 번호 선택 팁</h3>
+                    <div class="space-y-3 text-sm text-muted-foreground">
+                        <div class="flex gap-2">
+                            <span class="text-primary">•</span>
+                            <p>연속된 번호보다는 분산된 번호를 선택하는 것이 일반적입니다.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-primary">•</span>
+                            <p>과거 당첨 번호를 참고하되, 모든 조합의 확률은 동일합니다.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-primary">•</span>
+                            <p>인기 번호를 피하면 1등 당첨 시 분배금이 높아질 수 있습니다.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="text-primary">•</span>
+                            <p>생일, 기념일 등 개인적인 숫자도 좋은 선택입니다.</p>
+                        </div>
+                    </div>
+                    <a href="lotto-guide.html" class="inline-block mt-4 text-sm text-primary hover:underline">더 많은 팁 보기 →</a>
+                </div>
 
-            <div id="webcam-container" class="flex justify-center mb-4 rounded-lg overflow-hidden"></div>
-            <div id="label-container" class="space-y-2"></div>
-        </section>
+                <!-- Statistics -->
+                <div class="rounded-xl border border-border bg-card p-6 shadow-lg">
+                    <h3 class="font-bold mb-4">알고 계셨나요?</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="text-2xl font-bold text-primary">8,145,060</div>
+                            <div class="text-sm text-muted-foreground">로또 1등 당첨 확률 분모</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-primary">45개</div>
+                            <div class="text-sm text-muted-foreground">선택 가능한 번호 수</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-primary">2002년</div>
+                            <div class="text-sm text-muted-foreground">한국 로또 시작 연도</div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- About Section -->
-        <section id="about" class="rounded-xl border border-border bg-card p-6 shadow-lg mb-6">
-            <h2 class="text-lg font-semibold mb-4">서비스 소개</h2>
-            <div class="space-y-4 text-sm text-muted-foreground">
-                <p>
-                    <strong class="text-foreground">LuckyTools</strong>는 누구나 무료로 사용할 수 있는 온라인 도구 모음입니다.
-                    현재 로또 번호 생성기와 AI 반려동물 인식 기능을 제공하고 있습니다.
-                </p>
-                <p>
-                    <strong class="text-foreground">로또 번호 생성기</strong>는 암호학적으로 안전한 랜덤 알고리즘을 사용하여
-                    1부터 45까지의 숫자 중 중복 없이 6개의 번호를 추천해 드립니다. 생성된 번호는 완전히 무작위이며,
-                    어떠한 당첨 확률 상승도 보장하지 않습니다.
-                </p>
-                <p>
-                    <strong class="text-foreground">AI 반려동물 인식</strong> 기능은 Google Teachable Machine을 활용한
-                    머신러닝 모델로, 웹캠을 통해 촬영한 이미지에서 고양이인지 개인지 판별합니다.
-                    이 기능은 교육 및 엔터테인먼트 목적으로 제공됩니다.
-                </p>
-            </div>
-        </section>
-
-        <!-- Comments Section -->
-        <section class="rounded-xl border border-border bg-card p-6 shadow-lg mb-6">
-            <div class="flex items-center gap-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground" aria-hidden="true">
-                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                </svg>
-                <h2 class="text-lg font-semibold">댓글</h2>
-            </div>
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_config = function () {
-                    this.page.url = 'https://jocoding-week1-self.pages.dev/';
-                    this.page.identifier = 'lotto-generator';
-                };
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'https://lotto-11.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>댓글을 보려면 JavaScript를 활성화해주세요. <a href="https://disqus.com/?ref_noscript">Disqus 제공</a></noscript>
-        </section>
-    </div>
+                <!-- Service Info -->
+                <div class="rounded-xl border border-border bg-card p-6 shadow-lg">
+                    <h3 class="font-bold mb-4">LuckyTools 소개</h3>
+                    <p class="text-sm text-muted-foreground mb-4">LuckyTools는 무료 로또 번호 생성 서비스입니다. 당첨 확률, 구매 방법, 세금 정보까지 로또에 관한 모든 정보를 제공합니다.</p>
+                    <a href="about.html" class="inline-block text-sm text-primary hover:underline">자세히 알아보기 →</a>
+                </div>
+            </aside>
+        </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="border-t border-border bg-card/50 mt-8">
-        <div class="container mx-auto px-4 py-8 max-w-4xl">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer class="border-t border-border bg-card/50 mt-12">
+        <div class="container mx-auto px-4 py-10 max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="font-semibold mb-3">LuckyTools</h3>
-                    <p class="text-sm text-muted-foreground">무료 온라인 도구 서비스. 로또 번호 생성기와 AI 반려동물 인식 기능을 제공합니다.</p>
+                    <div class="flex items-center gap-2 font-bold text-lg mb-4">
+                        <svg width="24" height="24" viewBox="0 0 50 50"><defs><linearGradient id="footer-gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#fbbf24"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient></defs><circle cx="25" cy="25" r="23" fill="url(#footer-gold)"/><text x="25" y="31" text-anchor="middle" fill="white" font-weight="bold" font-size="16">L</text></svg>
+                        LuckyTools
+                    </div>
+                    <p class="text-sm text-muted-foreground">무료 로또 번호 생성 서비스. 당첨 확률, 구매 방법, 세금 정보까지 모든 로또 정보를 제공합니다.</p>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-3">서비스</h3>
+                    <h4 class="font-semibold mb-4">서비스</h4>
                     <ul class="space-y-2 text-sm text-muted-foreground">
                         <li><a href="#lotto" class="hover:text-foreground transition-colors">로또 번호 생성기</a></li>
-                        <li><a href="#ai-pet" class="hover:text-foreground transition-colors">AI 고양이/개 인식</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-3">정보</h3>
+                    <h4 class="font-semibold mb-4">가이드</h4>
                     <ul class="space-y-2 text-sm text-muted-foreground">
-                        <li><a href="#about" class="hover:text-foreground transition-colors">서비스 소개</a></li>
+                        <li><a href="lotto-guide.html" class="hover:text-foreground transition-colors">로또 완벽 가이드</a></li>
+                        <li><a href="faq.html" class="hover:text-foreground transition-colors">자주 묻는 질문</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">정보</h4>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li><a href="about.html" class="hover:text-foreground transition-colors">서비스 소개</a></li>
                         <li><a href="privacy.html" class="hover:text-foreground transition-colors">개인정보처리방침</a></li>
-                        <li><a href="mailto:contact@example.com" class="hover:text-foreground transition-colors">문의하기</a></li>
+                        <li><a href="mailto:luckytools.contact@gmail.com" class="hover:text-foreground transition-colors">문의하기</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-border pt-6 text-center text-sm text-muted-foreground">
                 <p>&copy; 2025 LuckyTools. All rights reserved.</p>
-                <p class="mt-1">본 서비스는 오락 목적으로 제공되며, 어떠한 당첨도 보장하지 않습니다.</p>
+                <p class="mt-2">본 서비스는 오락 및 정보 제공 목적으로 운영되며, 어떠한 당첨도 보장하지 않습니다.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
         let history = [];
 
@@ -304,9 +363,7 @@
             const numbers = [];
             while (numbers.length < 6) {
                 const num = Math.floor(Math.random() * 45) + 1;
-                if (!numbers.includes(num)) {
-                    numbers.push(num);
-                }
+                if (!numbers.includes(num)) numbers.push(num);
             }
             numbers.sort((a, b) => a - b);
             displayNumbers(numbers);
@@ -324,7 +381,6 @@
         function displayNumbers(numbers) {
             const container = document.getElementById('numbersContainer');
             container.innerHTML = '';
-
             numbers.forEach((num, index) => {
                 const ball = document.createElement('div');
                 ball.className = `w-14 h-14 rounded-full flex items-center justify-center text-lg font-bold text-white shadow-lg ${getGradientClass(num)} ball-animate`;
@@ -337,127 +393,20 @@
 
         function addToHistory(numbers) {
             const historyList = document.getElementById('historyList');
-
-            if (history.length === 0) {
-                historyList.innerHTML = '';
-            }
-
+            if (history.length === 0) historyList.innerHTML = '';
             history.unshift(numbers);
-            if (history.length > 5) {
-                history.pop();
-            }
+            if (history.length > 5) history.pop();
 
             const item = document.createElement('div');
-            item.className = 'flex items-center gap-2 p-3 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors';
-
+            item.className = 'flex items-center gap-2 p-2 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors';
             const numbersHtml = numbers.map(num =>
-                `<span class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-medium text-white ${getGradientClass(num)}">${num}</span>`
+                `<span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-medium text-white ${getGradientClass(num)}">${num}</span>`
             ).join('');
+            item.innerHTML = `<div class="flex gap-1 flex-1">${numbersHtml}</div><span class="text-xs text-muted-foreground">${new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}</span>`;
 
-            item.innerHTML = `
-                <div class="flex gap-1.5 flex-1">${numbersHtml}</div>
-                <span class="text-xs text-muted-foreground">${new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })}</span>
-            `;
-
-            if (historyList.firstChild) {
-                historyList.insertBefore(item, historyList.firstChild);
-            } else {
-                historyList.appendChild(item);
-            }
-
-            if (historyList.children.length > 5) {
-                historyList.removeChild(historyList.lastChild);
-            }
-        }
-    </script>
-    <!-- Disqus Comment Count -->
-    <script id="dsq-count-scr" src="//lotto-11.disqus.com/count.js" async></script>
-
-    <!-- Teachable Machine -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-    <script>
-        const MODEL_URL = "https://teachablemachine.withgoogle.com/models/FDFoArG87/";
-        let tmModel, webcam, labelContainer, maxPredictions;
-
-        async function initTeachable() {
-            const btn = document.getElementById('startCamBtn');
-            const captureBtn = document.getElementById('captureBtn');
-            btn.textContent = '로딩 중...';
-            btn.disabled = true;
-
-            try {
-                const modelURL = MODEL_URL + "model.json";
-                const metadataURL = MODEL_URL + "metadata.json";
-
-                tmModel = await tmImage.load(modelURL, metadataURL);
-                maxPredictions = tmModel.getTotalClasses();
-
-                const flip = true;
-                webcam = new tmImage.Webcam(280, 280, flip);
-                await webcam.setup();
-                await webcam.play();
-                window.requestAnimationFrame(updateWebcam);
-
-                document.getElementById("webcam-container").appendChild(webcam.canvas);
-                webcam.canvas.className = 'rounded-lg';
-
-                labelContainer = document.getElementById("label-container");
-                labelContainer.innerHTML = '<p class="text-sm text-muted-foreground text-center py-4">촬영 버튼을 눌러 판별하세요</p>';
-
-                btn.textContent = '웹캠 켜짐';
-                captureBtn.classList.remove('hidden');
-            } catch (error) {
-                btn.textContent = '모델 로드 실패';
-                console.error('Teachable Machine Error:', error);
-                labelContainer = document.getElementById("label-container");
-                labelContainer.innerHTML = '<p class="text-sm text-red-400">모델을 불러올 수 없습니다.</p>';
-            }
-        }
-
-        function updateWebcam() {
-            if (webcam) {
-                webcam.update();
-                window.requestAnimationFrame(updateWebcam);
-            }
-        }
-
-        async function captureAndPredict() {
-            if (!tmModel || !webcam) return;
-
-            const captureBtn = document.getElementById('captureBtn');
-            captureBtn.textContent = '분석 중...';
-            captureBtn.disabled = true;
-
-            labelContainer.innerHTML = '';
-            for (let i = 0; i < maxPredictions; i++) {
-                const div = document.createElement("div");
-                div.className = 'p-3 rounded-lg bg-secondary/50';
-                labelContainer.appendChild(div);
-            }
-
-            const prediction = await tmModel.predict(webcam.canvas);
-            for (let i = 0; i < maxPredictions; i++) {
-                const prob = (prediction[i].probability * 100).toFixed(1);
-                const barWidth = prediction[i].probability * 100;
-                labelContainer.childNodes[i].innerHTML = `
-                    <div class="flex justify-between items-center mb-1">
-                        <span class="font-medium">${prediction[i].className}</span>
-                        <span class="text-sm text-muted-foreground">${prob}%</span>
-                    </div>
-                    <div class="h-2 bg-secondary rounded-full overflow-hidden">
-                        <div class="h-full bg-primary transition-all duration-300" style="width: ${barWidth}%"></div>
-                    </div>
-                `;
-            }
-
-            captureBtn.innerHTML = `
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                </svg>
-                다시 촬영
-            `;
-            captureBtn.disabled = false;
+            if (historyList.firstChild) historyList.insertBefore(item, historyList.firstChild);
+            else historyList.appendChild(item);
+            if (historyList.children.length > 5) historyList.removeChild(historyList.lastChild);
         }
     </script>
 </body>

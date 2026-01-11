@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주 묻는 질문 (FAQ) - LuckyTools 로또 번호 생성기</title>
+    <meta name="description" content="LuckyTools 로또 번호 생성기 서비스 이용에 대한 자주 묻는 질문과 답변. 로또 번호 생성, 당첨 확률, 구매 방법에 대한 궁금증을 해결하세요.">
+    <meta name="keywords" content="FAQ, 자주 묻는 질문, 로또 번호 생성기, 로또 가이드, 도움말">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jocoding-week1-self.pages.dev/faq.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="자주 묻는 질문 (FAQ) - LuckyTools">
+    <meta property="og:description" content="LuckyTools 서비스 이용에 대한 자주 묻는 질문과 답변입니다.">
+    <meta property="og:url" content="https://jocoding-week1-self.pages.dev/faq.html">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6498788559901853" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        border: "hsl(240 3.7% 15.9%)",
+                        input: "hsl(240 3.7% 15.9%)",
+                        ring: "hsl(240 4.9% 83.9%)",
+                        background: "hsl(240 10% 3.9%)",
+                        foreground: "hsl(0 0% 98%)",
+                        primary: { DEFAULT: "hsl(0 0% 98%)", foreground: "hsl(240 5.9% 10%)" },
+                        secondary: { DEFAULT: "hsl(240 3.7% 15.9%)", foreground: "hsl(0 0% 98%)" },
+                        muted: { DEFAULT: "hsl(240 3.7% 15.9%)", foreground: "hsl(240 5% 64.9%)" },
+                        accent: { DEFAULT: "hsl(240 3.7% 15.9%)", foreground: "hsl(0 0% 98%)" },
+                        card: { DEFAULT: "hsl(240 10% 3.9%)", foreground: "hsl(0 0% 98%)" },
+                    },
+                    borderRadius: {
+                        lg: "0.5rem",
+                        md: "calc(0.5rem - 2px)",
+                        sm: "calc(0.5rem - 4px)",
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary {
+            list-style: none;
+        }
+        details[open] summary .chevron {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-background text-foreground antialiased">
+    <!-- Navigation Header -->
+    <nav class="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 max-w-6xl">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-2 font-bold text-lg">
+                    <svg width="28" height="28" viewBox="0 0 50 50">
+                        <defs><linearGradient id="nav-gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#fbbf24"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient></defs>
+                        <circle cx="25" cy="25" r="23" fill="url(#nav-gold)"/>
+                        <text x="25" y="31" text-anchor="middle" fill="white" font-weight="bold" font-size="16">L</text>
+                    </svg>
+                    LuckyTools
+                </a>
+                <div class="flex items-center gap-4 text-sm">
+                    <a href="/" class="text-muted-foreground hover:text-foreground transition-colors">홈</a>
+                    <a href="/lotto-guide.html" class="text-muted-foreground hover:text-foreground transition-colors">로또 가이드</a>
+                    <a href="/faq.html" class="text-foreground font-medium">FAQ</a>
+                    <a href="/about.html" class="text-muted-foreground hover:text-foreground transition-colors">소개</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Hero Section -->
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 mb-4">
+                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+            <h1 class="text-4xl font-bold mb-4">자주 묻는 질문</h1>
+            <p class="text-xl text-muted-foreground">LuckyTools 서비스에 대한 궁금증을 해결해 드립니다</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="grid grid-cols-3 gap-3 mb-8">
+            <a href="#general" class="rounded-lg border border-border bg-card p-4 text-center hover:border-primary/50 transition-colors">
+                <div class="text-2xl mb-1">🏠</div>
+                <span class="text-sm">일반</span>
+            </a>
+            <a href="#lotto" class="rounded-lg border border-border bg-card p-4 text-center hover:border-primary/50 transition-colors">
+                <div class="text-2xl mb-1">🎱</div>
+                <span class="text-sm">로또 생성기</span>
+            </a>
+            <a href="#privacy" class="rounded-lg border border-border bg-card p-4 text-center hover:border-primary/50 transition-colors">
+                <div class="text-2xl mb-1">🔒</div>
+                <span class="text-sm">개인정보</span>
+            </a>
+        </div>
+
+        <!-- General Questions -->
+        <section id="general" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="text-2xl">🏠</span> 일반 질문
+            </h2>
+            <div class="space-y-3">
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">LuckyTools는 어떤 서비스인가요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>LuckyTools는 무료 온라인 로또 번호 생성 서비스입니다. 주요 기능:</p>
+                        <ul class="mt-2 ml-4 list-disc space-y-1">
+                            <li><strong class="text-foreground">로또 번호 생성기:</strong> 무작위로 로또 6/45 번호를 생성합니다.</li>
+                            <li><strong class="text-foreground">로또 가이드:</strong> 로또 구매 방법, 당첨금 정보, 확률 분석 등 유용한 정보를 제공합니다.</li>
+                        </ul>
+                        <p class="mt-2">모든 서비스는 완전 무료이며, 회원가입 없이 이용 가능합니다.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">서비스 이용에 비용이 드나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>아니요, LuckyTools의 모든 기능은 <strong class="text-foreground">완전 무료</strong>입니다. 숨겨진 비용이나 유료 기능 업그레이드가 없습니다. 광고 수익으로 운영되며, 서비스 이용에 광고가 표시될 수 있습니다.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">회원가입이 필요한가요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>아니요, <strong class="text-foreground">회원가입 없이</strong> 모든 기능을 이용할 수 있습니다. 개인정보 입력 없이 바로 서비스를 사용하세요.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">모바일에서도 사용할 수 있나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>네, LuckyTools는 <strong class="text-foreground">반응형 웹 디자인</strong>으로 제작되어 스마트폰, 태블릿, PC 등 모든 기기에서 편리하게 이용할 수 있습니다. 별도의 앱 설치 없이 웹 브라우저로 접속하면 됩니다.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">어떤 브라우저를 지원하나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>최신 버전의 주요 웹 브라우저를 모두 지원합니다:</p>
+                        <ul class="mt-2 ml-4 list-disc space-y-1">
+                            <li>Google Chrome (권장)</li>
+                            <li>Mozilla Firefox</li>
+                            <li>Microsoft Edge</li>
+                            <li>Apple Safari</li>
+                            <li>Samsung Internet</li>
+                        </ul>
+                        <p class="mt-2 text-sm">Internet Explorer는 지원하지 않습니다.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Lotto Questions -->
+        <section id="lotto" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="text-2xl">🎱</span> 로또 번호 생성기
+            </h2>
+            <div class="space-y-3">
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">생성된 번호로 정말 당첨될 수 있나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>우리 서비스에서 생성되는 번호는 <strong class="text-foreground">수학적으로 완전 무작위</strong>입니다. 로또 추첨 자체가 무작위이므로, 어떤 번호든 동일한 당첨 확률(1등 기준 약 1/814만)을 가집니다.</p>
+                        <p class="mt-2">하지만 로또는 오락 목적으로 참여하시길 권장드리며, 당첨을 보장하지 않습니다. 복권 구매는 여유 자금 범위 내에서 즐겨주세요.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">번호는 어떤 방식으로 생성되나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>JavaScript의 <code class="bg-secondary px-1 rounded">Math.random()</code> 함수를 사용하여 1부터 45까지의 숫자 중 중복 없이 6개를 무작위로 선택합니다. 이는 동행복권의 자동 번호 생성 방식과 유사합니다.</p>
+                        <p class="mt-2">모든 번호는 동일한 확률로 선택되며, 이전에 생성된 번호와 무관하게 매번 새롭게 무작위 생성됩니다.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">생성된 번호를 저장할 수 있나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>현재 버전에서는 생성된 번호가 자동으로 저장되지 않습니다. 마음에 드는 번호가 생성되면 <strong class="text-foreground">스크린샷을 찍거나 메모</strong>해 두시는 것을 권장합니다.</p>
+                        <p class="mt-2">페이지를 새로고침하거나 닫으면 이전에 생성된 번호는 사라지니 주의해 주세요.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">한 번에 여러 게임을 생성할 수 있나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>현재는 '번호 생성' 버튼을 클릭할 때마다 <strong class="text-foreground">1게임씩</strong> 생성됩니다. 여러 게임이 필요하시면 버튼을 여러 번 클릭해 주세요.</p>
+                        <p class="mt-2">향후 업데이트에서 한 번에 여러 게임을 생성하는 기능을 추가할 예정입니다.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">번호별 색상은 무슨 의미인가요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>실제 로또 추첨에서 사용하는 볼 색상과 동일합니다:</p>
+                        <ul class="mt-2 ml-4 list-disc space-y-1">
+                            <li><span class="text-yellow-500 font-bold">노란색</span>: 1~10번</li>
+                            <li><span class="text-blue-500 font-bold">파란색</span>: 11~20번</li>
+                            <li><span class="text-red-500 font-bold">빨간색</span>: 21~30번</li>
+                            <li><span class="text-purple-500 font-bold">보라색</span>: 31~40번</li>
+                            <li><span class="text-green-500 font-bold">초록색</span>: 41~45번</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">통계 분석 기능이 있나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>현재 버전에서는 기본적인 번호 생성 기능만 제공합니다. 과거 당첨 번호 분석이나 번호별 출현 빈도 통계는 제공하지 않습니다.</p>
+                        <p class="mt-2">참고로, 로또는 매 추첨이 독립적인 사건이므로 과거 통계가 미래 당첨 번호를 예측하는 데 수학적 의미가 없습니다. 모든 번호는 동일한 확률로 추첨됩니다.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Privacy Questions -->
+        <section id="privacy" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                <span class="text-2xl">🔒</span> 개인정보 보호
+            </h2>
+            <div class="space-y-3">
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">어떤 개인정보를 수집하나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>LuckyTools는 회원가입을 요구하지 않으며, <strong class="text-foreground">개인 식별 정보를 수집하지 않습니다.</strong> 자동으로 수집되는 정보는 다음과 같습니다:</p>
+                        <ul class="mt-2 ml-4 list-disc space-y-1">
+                            <li>IP 주소 (익명화 처리)</li>
+                            <li>브라우저 종류 및 버전</li>
+                            <li>방문 시간 및 페이지</li>
+                            <li>기기 유형 (모바일/PC)</li>
+                        </ul>
+                        <p class="mt-2">이 정보는 서비스 개선 및 통계 분석 목적으로만 사용됩니다.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">쿠키를 사용하나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>네, 다음과 같은 쿠키를 사용합니다:</p>
+                        <ul class="mt-2 ml-4 list-disc space-y-1">
+                            <li><strong class="text-foreground">필수 쿠키:</strong> 웹사이트 기본 기능 제공</li>
+                            <li><strong class="text-foreground">분석 쿠키:</strong> Google Analytics를 통한 방문 통계</li>
+                            <li><strong class="text-foreground">광고 쿠키:</strong> Google AdSense의 맞춤형 광고</li>
+                        </ul>
+                        <p class="mt-2">브라우저 설정에서 쿠키를 비활성화할 수 있으나, 일부 기능이 제한될 수 있습니다.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">제3자와 정보를 공유하나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>서비스 운영을 위해 다음 제3자 서비스를 이용합니다:</p>
+                        <ul class="mt-2 ml-4 list-disc space-y-1">
+                            <li><strong class="text-foreground">Google AdSense:</strong> 광고 제공</li>
+                            <li><strong class="text-foreground">Google Analytics:</strong> 웹사이트 분석</li>
+                            <li><strong class="text-foreground">Cloudflare:</strong> 웹사이트 호스팅 및 보안</li>
+                        </ul>
+                        <p class="mt-2">각 서비스는 자체 개인정보처리방침에 따라 데이터를 처리합니다. 자세한 내용은 <a href="/privacy.html" class="text-primary underline">개인정보처리방침</a>을 참조하세요.</p>
+                    </div>
+                </details>
+
+                <details class="rounded-xl border border-border bg-card overflow-hidden group">
+                    <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-secondary/50 transition-colors">
+                        <span class="font-medium">내 정보를 삭제할 수 있나요?</span>
+                        <svg class="w-5 h-5 text-muted-foreground transition-transform duration-200 chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="px-4 pb-4 text-muted-foreground">
+                        <p>네, 개인정보 관련 요청은 언제든지 가능합니다:</p>
+                        <ul class="mt-2 ml-4 list-disc space-y-1">
+                            <li>개인정보 열람 요청</li>
+                            <li>개인정보 정정 요청</li>
+                            <li>개인정보 삭제 요청</li>
+                            <li>처리정지 요청</li>
+                        </ul>
+                        <p class="mt-2">요청은 <a href="mailto:contact@example.com" class="text-primary underline">contact@example.com</a>으로 이메일을 보내주세요.</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="rounded-xl border border-border bg-card p-6 mt-8">
+            <h2 class="text-xl font-bold mb-4">원하시는 답변을 찾지 못하셨나요?</h2>
+            <p class="text-muted-foreground mb-4">
+                추가 질문이 있으시면 언제든지 문의해 주세요. 빠른 시일 내에 답변 드리겠습니다.
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <a href="mailto:contact@example.com" class="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    이메일 문의
+                </a>
+                <a href="/" class="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    홈으로 돌아가기
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-border bg-card/50 mt-12">
+        <div class="container mx-auto px-4 py-8 max-w-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold mb-3">LuckyTools</h3>
+                    <p class="text-sm text-muted-foreground">무료 온라인 로또 번호 생성기. 행운의 번호를 생성하고 로또 가이드를 확인하세요.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3">서비스</h3>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li><a href="/" class="hover:text-foreground transition-colors">로또 번호 생성기</a></li>
+                        <li><a href="/lotto-guide.html" class="hover:text-foreground transition-colors">로또 완벽 가이드</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-3">정보</h3>
+                    <ul class="space-y-2 text-sm text-muted-foreground">
+                        <li><a href="/faq.html" class="hover:text-foreground transition-colors">자주 묻는 질문</a></li>
+                        <li><a href="/about.html" class="hover:text-foreground transition-colors">서비스 소개</a></li>
+                        <li><a href="/privacy.html" class="hover:text-foreground transition-colors">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-border pt-6 text-center text-sm text-muted-foreground">
+                <p>&copy; 2025 LuckyTools. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
