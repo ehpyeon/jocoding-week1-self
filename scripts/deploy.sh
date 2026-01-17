@@ -3,7 +3,7 @@
 
 set -e
 
-PROJECT_DIR="/Users/ehp/projects/jocoding-week1-self"
+PROJECT_DIR="/Users/ehp/projects/luckytools"
 cd "$PROJECT_DIR"
 
 echo "🚀 자동 배포 시작..."
@@ -43,7 +43,7 @@ git push origin main
 
 # 7. Cloudflare Pages 배포
 echo "📝 Step 6: Cloudflare Pages 배포"
-wrangler pages deploy . --project-name jocoding-week1-self --branch main --commit-dirty=true
+wrangler pages deploy . --project-name luckytools --branch main --commit-dirty=true
 
 echo "✅ 배포 완료!"
-echo "🌐 https://jocoding-week1-self.pages.dev"
+echo "🌐 https://luckytools.pages.dev"
